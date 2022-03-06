@@ -1,5 +1,5 @@
 # Methods
-This is a companion code to Section 2 of of "José Brito, Andrei Goloubentsev, Evgeny Goncharov,  Automatic Adjoint Differentiation for special functions involving expectations".
+This is a companion code to Section 2 of "José Brito, Andrei Goloubentsev, Evgeny Goncharov,  Automatic Adjoint Differentiation for special functions involving expectations".
 
 main.cpp calls the files with implementations of the two methods for computing the gradient of G for a set of European Options.
 
