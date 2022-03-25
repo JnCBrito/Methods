@@ -2,3 +2,4 @@
 
 extern void option_pricing_1_Proj();
 extern void option_pricing_2_Proj();
+extern void option_pricing_3_Proj();
