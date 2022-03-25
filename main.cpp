@@ -13,5 +13,6 @@ int main(int argc, char* argv[]) {
 	}
 	if (run_all || task == "1") option_pricing_1_Proj();
 	if (run_all || task == "2") option_pricing_2_Proj();
+	if (run_all || task == "3") option_pricing_3_Proj();
 	return 0;
 }
