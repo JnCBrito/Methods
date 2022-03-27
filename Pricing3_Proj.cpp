@@ -386,16 +386,16 @@ public:
 
                     //Since it is being implemented the adjoint differentiation, it is required to initialize the adjoint
                     //variables, in this case is, the average value of all previous simulations
-                    //(sum_{k=1}^{j} y_i(w_{k-1}) - C_i)/j.
+                    //(sum_{k=1}^{j} y_i(w_{k-1}))/j.
 
                     for (int it_options = 0; it_options < num_options; it_options++){
 
-                        double value = eos[it_options].payoffs[mc_i-1]-eos[it_options].obs_price;
+                        double value = eos[it_options].payoffs[mc_i-1];
 
                         double adjoint = Adjoint(it_options, num_blocks, size_adjoint, adjoint_prod, value);
 
                         ws->setDiff(
-                            payoffs_args[it_options], adjoint
+                            payoffs_args[it_options], adjoint-eos[it_options].obs_price
                         );
 
                     }
